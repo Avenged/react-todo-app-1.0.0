@@ -69,6 +69,12 @@ export const AppRouter = () => {
                         path="/about"
                         component={ AboutScreen }
                     />
+                    <PrivateRoute 
+                        exact
+                        isAuthenticated={ isLoggedIn }
+                        path="/"
+                        component={ HomeScreen }
+                    />
                     <Redirect to="/auth/login" />
                 </Switch>
             </div>                
