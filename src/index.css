@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-bar {
+  display: flex;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 3rem;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+}
+
+.app-bar * {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+}
+
+.btn-outlined {
+  outline: 3px solid #8e44ad;
+}
+
+.app-bar-btn {
+  cursor: pointer;
+  box-sizing:content-box;
+  transition: background-color 0.5s ease;
+  transition-property: background-color, color;
+  background-color: transparent;
+  padding: 1.5px 7px 1.5px 7px;
+  border-radius: 3pt;
+  border: none;
+}
+
+.app-bar-btn:hover {
+  color: #bdc3c7;
+  transition: 0.35s ease;
+  transition-property: color;
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+.items-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-bar a.active {
+  font-weight: 700;
+}
